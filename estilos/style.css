@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    verde: #49a09d
+    lilas: #5f2c82
+*/
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    /* fazendo com que a borda faça parte da conta de largura */
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2c82;
+}
+
+main {
+    /* transformando o main na base para o login */
+    position: relative;
+    /* altura total da tela */
+    height: 100vh;
+    /* largura total da tela */
+    width: 100vw;
+}
+
+section#login {
+    /* transformando o login, para se posicionar dentro do main */
+    position: absolute;
+    /* deixando o login com seu canto no centro */
+    top: 50%;
+    left: 50%;
+    /* deixando o centro do login no centro do main */
+    transform: translate(-50%, -50%);
+    /* fazer com que tudo que estiver fora da borda, fique escondido */
+    overflow: hidden;
+
+    background-color: white;
+    /* largura do login */
+    width: 250px;
+    /* altura do login */
+    height: 500px;
+    /* deixando as bordas arredondadas do login */
+    border-radius: 20px;
+    /* adicionando sombra no login, onde não vai ter deslocamento nem horizontal e nem vertical, mas terá 10px de espalhamento, e deixando uma leve transparencia. */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.588);
+
+    /* adicionando uma transição de largura e altura, entre as media queries */
+    transition: width .5s, height .5s;
+    /* deixando mais suave a transição, onde ela não vai acelerar e desacelarar na mesma velocidade. */
+    transition-timing-function: ease;
+}
+
+div#img {
+    /* transformando em bloco, ou seja irá ocupar todo o espaço delimitado */
+    display: block;
+    /* fundo da imagem lilas, caso a imagem não carregue. Selecionando a imagem e impedindo de que ela se repita. */
+    background: #5f2c82 url(../imagens/login.jpg) no-repeat;
+    /* escolhendo como a imagem irá aparecer, os dois principais modos são CONTAIN (mostra a imagem toda) e COVER (tenta configurar a imagem para que ocupe todos os espaços mesmo que a imagem não apareça toda, somente uma parte) */
+    background-size: cover;
+    /* como a imagem não aparece toda, escolhemos para que apareça o centro do width e o centro do height. */
+    background-position: center center;
+    /* altura da imagem */
+    height: 200px;
+}
+
+div#formulario {
+    /* transformando em bloco, ou seja irá ocupar todo o espaço delimitado */
+    display: block;
+    padding: 10px;
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#login {
+        /* o login vai ter 80% da largura da tela. */
+        width: 80vw;
+    }
+
+    div#img {
+        /* como a imagem e o formulário estão com display:block; com o float nós escolhemos o lado que ficará o bloco. */
+        float: left;
+        /* a imagem vai ter 30% de largura do login */
+        width: 30%;
+        /* a imagem vai 100% de altura do login */
+        height: 100%;
+    }
+
+    div#formulario {
+        /* como a imagem e o formulário estão com display:block; com o float nós escolhemos o lado que ficará o bloco. */
+        float: right;
+        /* o formulário vai ter 70% de largura do login */
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#login {
+        width: 990px;
+    }
+
+    div#img {
+        /* como a imagem e o formulário estão com display:block; com o float nós escolhemos o lado que ficará o bloco. */
+        float: left;
+        /* a imagem vai ter 50% da largura do login */
+        width: 50%;
+        /* a imagem vai ter 100% da altura do login */
+        height: 100%;
+    }
+
+    div#formulario {
+        /* como a imagem e o formulário estão com display:block; com o float nós escolhemos o lado que ficará o bloco. */
+        float: right;
+        /* o formulário vai ter 50% de largura do login */
+        width: 50%;
+    }
+}
