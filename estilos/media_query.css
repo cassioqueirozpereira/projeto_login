@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    
     section#login {
         /* o login vai ter 80% da largura da tela. */
         width: 80vw;
+        /* o login vai ter */
+        height: 270px;
     }
 
     div#img {
@@ -19,18 +25,29 @@
         /* como a imagem e o formulário estão com display:block; com o float nós escolhemos o lado que ficará o bloco. */
         float: right;
         /* o formulário vai ter 70% de largura do login */
-        width: 70%;
+        width: 60%;
+        /* configurando a centralização do formulário */
+        transform: translate(-35px, 5px)
+    }
+
+    p {
+        font-size: 1em;
     }
 }
 
 @media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    
     section#login {
-        width: 990px;
+        width: 992px;
+        height: 300px;
     }
 
     div#img {
         /* como a imagem e o formulário estão com display:block; com o float nós escolhemos o lado que ficará o bloco. */
-        float: left;
+        float: right;
         /* a imagem vai ter 50% da largura do login */
         width: 50%;
         /* a imagem vai ter 100% da altura do login */
@@ -39,8 +56,18 @@
 
     div#formulario {
         /* como a imagem e o formulário estão com display:block; com o float nós escolhemos o lado que ficará o bloco. */
-        float: right;
+        float: left;
         /* o formulário vai ter 50% de largura do login */
-        width: 50%;
+        width: 47%;
+        /* configurando a centralização do formulário */
+        transform: translate(15px, 20px)
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
     }
 }
